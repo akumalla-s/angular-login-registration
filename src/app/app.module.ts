@@ -10,6 +10,9 @@ import { NavigationBarComponent } from './navigation-bar/navigation-bar.componen
 import { HomepageComponent } from './homepage/homepage.component';
 import { AboutComponent } from './about/about.component';
 import { DepartmentsComponent } from './departments/departments.component';
+import { EmployeeRegistrationComponent } from './employee-registration/employee-registration.component';
+
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -19,12 +22,14 @@ import { DepartmentsComponent } from './departments/departments.component';
     NavigationBarComponent,
     HomepageComponent,
     AboutComponent,
-    DepartmentsComponent
+    DepartmentsComponent,
+    EmployeeRegistrationComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
